@@ -87,26 +87,27 @@ body {
   font-weight: normal;
   font-size: 24px;
   line-height: 28px;
-position: relative;
+  position: relative;
   letter-spacing: 2px;
   padding-bottom: 28px;
   &::after {
-      content: "";
-      position: absolute;
-      width: 50px;
-      height: 8px;
-      background-color: $accent;
-      bottom: 0;
-      margin: 0 auto;
-      left: 0;
-      right: 0;
-      
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 8px;
+    background-color: $accent;
+    bottom: 0;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
   }
 }
-  @media (min-width: 640px) {
-    .title {
-        font-size: 48px;
-  line-height: 56px;
+@media (min-width: 640px) {
+  .title {
+    font-size: 48px;
+    line-height: 56px;
+    &::after {
+      width: 100px;
     }
+  }
 }
-
